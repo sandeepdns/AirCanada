@@ -63,8 +63,6 @@ public class TestMethods {
 
 @When("user click on the Flight tab")
 public void user_click_on_the_flight_tab() throws InterruptedException {
-	//Thread.sleep(5000);
-   // repo.FlightsTab.click();
    ClickAnElement(repo.FlightsTab, "Flights Tab");
 }
 public void ClickAnElement(WebElement ele, String EleName) throws InterruptedException {
@@ -91,12 +89,10 @@ public void select_the_trip_type_as_round_trip() throws InterruptedException {
 @When("Set the trip Origin as {string}")
 public void set_the_trip_origin_as(String string) throws InterruptedException {
    EnterText(repo.FromTextbox, "YYR");
-   // ClickAnElement(repo.OriginSearchRes);
 }
 @When("Set the trip destination as {string}")
 public void set_the_trip_destination_as(String string) throws InterruptedException {
     EnterText(repo.ToTextbox, "YYZ");
-   // ClickAnElement(repo.DestinationSearchRes);
 }
 public void EnterText(WebElement ele, String data) {
 	//wait.until(ExpectedConditions.visibilityOf(ele));

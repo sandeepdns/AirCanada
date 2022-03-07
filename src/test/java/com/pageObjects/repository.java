@@ -32,7 +32,7 @@ public class repository {
 	@FindBy(xpath = "//input[@id='bkmgFlights_origin_trip_1']")
 	public WebElement FromTextbox;
 
-	@FindBy(xpath = "//li[@id='bkmgFlights_origin_trip_1SearchResult0']")
+	@FindBy(xpath = "//div[@class='location-info-main']")
 	public WebElement OriginSearchRes;
 
 	@FindBy(xpath = "bkmgFlights_destination_trip_1SearchResult0")
